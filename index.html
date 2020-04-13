@@ -1,17 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <title>PetPlace project</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> PetPlace project</title>
-    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
+<!--Header-->
 
 <body>
-    <p>Hello World!</p>
+    <div id="header" class="jumbotron jumbotron-fluid text-center">
+        <div class="row">
+            <div class="col-sm-2">
+                <img id="logo" src=images/Logo.jpg class="mx-auto d-block img-fluid rounded" alt="Logo"></div>
+            <div id="header-h1" class="col-sm-9">
+                <h1>Welcome on PetPlace - your Place for all topics about your Pet!</h1>
+            </div>
+        </div>
+    </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="navbar-brand" href="#">PetPlace</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item" onclick="scrollto('about_us');">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item" onclick="scrollto('selected_items');">
+                        <a class="nav-link" href="#">Selected Items</a>
+                    </li>
+                    <li class="nav-item" onclick="scrollto('write_article');">
+                        <a class="nav-link" href="#">Write an Article</a>
+                    </li>
+                    <li class="nav-item" onclick="scrollto('make_appt');">
+                        <a class="nav-link" href="#">Make an Appointment</a>
+                    </li>
+                    <li class="nav-item" onclick="scrollto('reach_to_us');">
+                        <a class="nav-link" href="#">Reach to Us!</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 ml-auto">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
 
-    <script src="index.js"></script>
+    </nav>
+    <!--Section with small text/picture-->
+    <div id="about_us" class="container-fluid">
+        <div class="jumbotron">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet
+                consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+                Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+        </div>
+    </div>
+    <!--Multi-Card Carousel of selected items(content)-->
+    <div id="selected_items" class="container-fluid">
+        <div class="jumbotron">
+            <h1>Selected Items</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet
+                consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+                Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+        </div>
+    </div>
+
+    <div id="write_article" class="container-fluid">
+        <div class="jumbotron">
+            <h1>Write an Article</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet
+                consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+                Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+        </div>
+    </div>
+    <!--Appointment form-->
+    <div id="make_appt" class="container-fluid">
+        <div class="jumbotron">
+            <h1>Make an Appointment</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet
+                consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+                Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
+        </div>
+    </div>
+    <!--Footer including Link to FAQ, Email contact, policy and Social Media Links-->
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <small class="d-block mb-3 text-muted">&copy; PetPlace 2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>FAQ</h5>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Send Mail</h5>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Social Media</h5>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Policy</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>
+                    <a href="#">Back to top</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/index.js"></script>
 </body>
 
 </html>
