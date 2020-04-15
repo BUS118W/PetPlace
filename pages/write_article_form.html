@@ -5,23 +5,23 @@
     <title>PetPlace project</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
-
 <!--Start Header-->
 
 <body>
     <div id="header" class="jumbotron jumbotron-fluid text-center">
         <h1>Welcome on PetPlace - your Place for all topics about your Pet!</h1>
     </div>
-    <nav class="navbar navbar-expand-lg py-1 bg-light navbar-light site-header sticky-top">
+
+    <nav class="navbar navbar-expand-lg py-3 bg-light navbar-light site-header sticky-top">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
             <a class="navbar-brand" href="#">
-                <img id="logo" src="images/Logo.jpg" width="90" alt="Logo" class="d-inline-block">
+                <img id="logo" src="../images/Logo.jpg" width=" 90" alt="Logo" class="d-inline-block">
                 <span>Pet Place</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -30,16 +30,16 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item" onclick="scrollto('about_us');">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="../index.html">About Us</a>
                     </li>
                     <li class="nav-item" onclick="scrollto('selected_items');">
-                        <a class="nav-link" href="#">Selected Items</a>
+                        <a class="nav-link" href="../index.html">Selected Items</a>
                     </li>
                     <li class="nav-item" onclick="scrollto('write_article');">
-                        <a class="nav-link" href="#">Write an Article</a>
+                        <a class="nav-link" href="write_article_form.html">Write an Article</a>
                     </li>
                     <li class="nav-item" onclick="scrollto('make_appt');">
-                        <a class="nav-link" href="#">Make an Appointment</a>
+                        <a class="nav-link" href="appointment_form.html">Make an Appointment</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0 ml-auto">
@@ -50,41 +50,47 @@
         </div>
     </nav>
 
-    <!--Section with text who we are and a carousel including the services we provide-->
-    <div id="about_us" class="container-fluid">
-        <div class="jumbotron">
-            <h1>About Us</h1>
-            <p>We are a group of pet lovers who provide professional services and also love to site-header
-                our knowledge about Pets</p>
+    <div class="container-fluid">
+        <div class="jumbotron form-group">
+            <form>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="Email" placeholder="Email">
+                    </div>
+                </div>
+            </form>
+            <br><br>
+            <div class="form-group col-md-4">
+                <label for="SelectTopic">Topic</label>
+                <select id="SelectTopic" class="form-control">
+                    <option selected>Choose topic</option>
+                    <option value="1">Treatments</option>
+                    <option value="2">Food</option>
+                    <option value="3">Healthcare</option>
+                </select>
+            </div>
+            <br><br>
+            <label for="article">Your text:</label>
+            <textarea class="form-control" rows="20" id="article"></textarea>
+            <br><br>
+            <p>Or choose a file</p>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+            <br><br>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </div>
-    <!--Multi-Card Carousel of selected items(content)-->
-    <div id="selected_items" class="container-fluid">
-        <div class="jumbotron">
-            <h1>Selected Items</h1>
-            <p>Here you can see selected items from our contributors</p>
-        </div>
-    </div>
-    <!--Link to Write article form-->
-    <div id="write_article" class="container-fluid">
-        <div class="jumbotron">
-            <h1>Write an Article</h1>
-            <p>
-                If you are interested in contributing to our webiste -
-                <a href="pages/write_article_form.html" target="_self">Click here</a> to enter an article
-            </p>
-        </div>
-    </div>
-    <!--Link to Make Appointment form-->
-    <div id="make_appt" class="container-fluid">
-        <div class="jumbotron">
-            <h1>Make an Appointment</h1>
-            <p>
-                We also provide care programs for your Pets like-
-                <a href="pages/appointment_form.html" target="_self">Click here</a> to arrange a treat appointment
-            </p>
-        </div>
-    </div>
+
+
+
     <!--Footer including Link to FAQ, Email contact, policy and Social Media Links-->
     <footer class="container py-5">
         <div class="row">
@@ -113,7 +119,7 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="/index.js"></script>
+    <script type="text/javascript" src="../index.js"></script>
 </body>
 
 </html>
