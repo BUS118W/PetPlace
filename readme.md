@@ -4,10 +4,15 @@ PetPlace is a webpage for Pet Owners and friends of Pets.
 We're loving them as much as you, and that's why we created this page for acquiring and providing 
 on all kind Information for our beloved ones.
 
-hi friends
+Image Sources:
+https://www.pexels.com/photo/english-cocker-spaniel-puppy-sitting-on-ground-beside-grass-1254140/
 
-hello do this work ? - justin
+https://www.pexels.com/photo/cat-sleeping-62640/
 
-another ch
+https://www.pexels.com/photo/white-bird-perched-on-cage-1418241/
 
-edit #4
+https://www.pexels.com/photo/woman-in-blue-denim-jacket-holding-brushing-her-siberian-husky-4148879/
+
+https://unsplash.com/photos/FGcbhklurhU
+
+https://www.pexels.com/photo/photography-of-man-training-a-rottweiler-2899100/
