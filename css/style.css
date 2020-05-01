@@ -23,3 +23,8 @@ body
 li {
     float: left;
   }
+  
+.text-3 {
+  color: white;
+  text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+}
