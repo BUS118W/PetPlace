@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PetPlace project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<!--Start Header-->
+
+<body>
+    <div id="header" class="jumbotron jumbotron-fluid text-center">
+        <h1>Welcome on PetPlace - your Place for all topics about your Pet!</h1>
+    </div>
+    <nav class="navbar navbar-expand-lg py-1 bg-light navbar-light site-header sticky-top">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" src="images/Logo.jpg" width="90" alt="Logo" class="d-inline-block">
+                <span>Pet Place</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item" onclick="scrollto('about_us');">
+                        <a class="nav-link" href="index.html">About Us</a>
+                    </li>
+                    <li class="nav-item" onclick="scrollto('selected_items');">
+                        <a class="nav-link" href="index.html#selected_items">Selected Items</a>
+                    </li>
+                    <li class="nav-item" onclick="scrollto('write_article');">
+                        <a class="nav-link" href="write_article_form.html">Write an Article</a>
+                    </li>
+                    <li class="nav-item" onclick="scrollto('make_appt');">
+                        <a class="nav-link" href="appointment_form.html">Make an Appointment</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 ml-auto">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="faq" class="container-fluid">
+        <div class="jumbotron">
+            <h6>Who are you?</h6>
+            <li>We are a team of pet lovers that have created a landing page for all your pet care-related questions!
+                You can also visit the About Us page for more information on each of the team members.</li>
+            <br>
+            <br>
+            <h6>What are some Bay Area Pet Adoption Centers?</h6>
+            <a href="https://www.sanjoseca.gov/your-government/departments/animal-care-services/adoptable-pets">San Jose
+                Animal Care Center</a></li>
+            <br>
+            <a href="https://www.hssv.org/">Humane Society Silicon Valley</a></li>
+            <br>
+            <a href="https://www.petsmart.com/adoption/people-saving-pets/ca-adoption-landing.html">PetSmart</a></li>
+            <br>
+            <a href="http://www.sbprdogs.org/">South Bay Purebred Rescue</a></li>
+            <br>
+            <br>
+            <h6>What are some things to keep in mind when adopting a pet?</h6>
+            <li>Financial costs (pet food, grooming, obedience training, pet supplies, veterinary care), Pet allergies,
+                Landlord approval, Time commitment</li>
+            <br>
+            <br>
+            <h6>What are some tips for first time pet owners?</h6>
+            <li>Prep the home and members of the home. It is also beneficial to help your pet adapt to your home and
+                daily routines. Know your capacity to care for a pet and the activity that comes with adopting a new
+                pet.
+                Bonding time is important in developing a strong relationship with your pet. Patience is key when first
+                adopting and training a pet!</li>
+            <br>
+            <br>
+            <br>
+            <h6>What are some tricks I can teach my pet?</h6>
+            <li>You can find some good tricks here: <a
+                    href="https://dogtime.com/reference/dog-training/34027-10-fun-impressive-tricks-can-teach-dog">10
+                    Fun, Impressive Tricks You Can Teach Any Dog</a></li>
+            <br>
+            <br>
+            <h6>What are some veterinary care places in San Jose?</h6>
+            <a href="https://www.arkveterinarycare.com/">ARK Veterinary Care</a></li>
+            <br>
+            <a href="https://vetmobilecare.com/">Saiki Veterinary Mobile Care</a></li>
+            <br>
+            <a href="https://www.willowglenpethospital.com/">Willow Glen Pet Hospital</a></li>
+            <br>
+            <br>
+            <h6>What are some reliable places to buy pet care supplies from?</h6>
+            <a href="https://www.petco.com/shop/en/petcostore">Petco</a></li>
+            <br>
+            <a href="https://www.petsmart.com/">PetSmart</a></li>
+            <br>
+            <a href="https://www.amazon.com/b?node=17020707011">Amazon Pets</a></li>
+            <br>
+            <br>
+            <h6>What is the response time for an Appointment Form Request?</h6>
+            <li>Please allow 2 business days for us to process your appointment request.</li>
+            <br>
+            <br>
+            <h6>Can I submit my own content to this website?</h6>
+            <li>Yes, you can submit your own text or file submission under the Write an Article tab.</li>
+            <br>
+            <br>
+            <h6>How can I suggest for any edits to this website content?</h6>
+            <li>You can upload one of your own article, or select the Send Mail option. Please allow at least 2 business
+                days for a response.</li>
+            <br>
+            <br>
+            <h6>If I don't find my question here, who can I reach out to?</h6>
+            <li>You can select Send Mail at the bottom of this page to contact our team directly. Please allow at least
+                2 business days for a response.</li>
+        </div>
+    </div>
+    <!--Footer including Link to FAQ, Email contact, policy and Social Media Links-->
+    <footer class="container py-5">
+        <div class="row padding">
+            <div class="col-2 col-lg-2">
+                <small class="text-muted">&copy; PetPlace 2020</small>
+            </div>
+            <div class="col-lg-2">
+                <h5><a href="#">FAQ</a></h5>
+            </div>
+            <div class="col-lg-2">
+                <h5><a href="mailto:PetPlace@example.com" target="_top">Send Mail</a></h5>
+            </div>
+            <div class="col-lg-3">
+                <a href="https://www.instagram.com/wearepetplace/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/wearepetplace" class="fa fa-twitter"></a>
+            </div>
+            <div class="col-lg-2">
+                <h5><a href="policy.html">Policy</a></h5>
+            </div>
+            <div class="col-lg-1 text-center">
+                <p>
+                    <a href="#">Back to top</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

@@ -5,23 +5,24 @@
     <title>PetPlace project</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
-
 <!--Start Header-->
 
 <body>
     <div id="header" class="jumbotron jumbotron-fluid text-center">
         <h1>Welcome on PetPlace - your Place for all topics about your Pet!</h1>
     </div>
-    <nav class="navbar navbar-expand-lg py-1 bg-light navbar-light site-header sticky-top">
+
+    <nav class="navbar navbar-expand-lg py-3 bg-light navbar-light site-header sticky-top">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="navbar-brand" href="../index.html">
-                <img id="logo" src="../images/Logo.jpg" width="90" alt="Logo" class="d-inline-block">
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" src="images/Logo.jpg" width=" 90" alt="Logo" class="d-inline-block">
                 <span>Pet Place</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -50,44 +51,73 @@
         </div>
     </nav>
 
-    <div id="faq" class="container-fluid">
-        <div class="jumbotron">
-            <h6>Who are you?</h6>
-            <ul>
-                <li>We are ...</li>
-            </ul>
-
+    <div class="container-fluid">
+        <div class="jumbotron form-group">
+            <form>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="Email" placeholder="Email">
+                    </div>
+                </div>
+            </form>
+            <br><br>
+            <div class="form-group">
+                <label for="SelectTopic">Topic</label>
+                <select id="SelectTopic" class="form-control">
+                    <option selected>Choose topic</option>
+                    <option value="1">Treatments</option>
+                    <option value="2">Food</option>
+                    <option value="3">Healthcare</option>
+                </select>
+            </div>
+            <br><br>
+            <label for="article">Your text:</label>
+            <textarea class="form-control" rows="20" id="article"></textarea>
+            <br><br>
+            <p>Or choose a file</p>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+            <br><br>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </div>
+
+
+
     <!--Footer including Link to FAQ, Email contact, policy and Social Media Links-->
     <footer class="container py-5">
-        <div class="row">
-            <div class="col-12 col-md">
-                <small class="d-block mb-3 text-muted">&copy; PetPlace 2020</small>
+        <div class="row padding">
+            <div class="col-2 col-lg-2">
+                <small class="text-muted">&copy; PetPlace 2020</small>
             </div>
-            <div class="col-6 col-md">
-                <h5><a href="#">FAQ</a></h5>
+            <div class="col-lg-2">
+                <h5><a href="../pages/faq.html">FAQ</a></h5>
             </div>
-            <div class="col-6 col-md">
+            <div class="col-lg-2">
                 <h5><a href="mailto:PetPlace@example.com" target="_top">Send Mail</a></h5>
             </div>
-            <div class="col-6 col-md">
-                <h5>Social Media</h5>
-                </ul>
+            <div class="col-lg-3">
+                <a href="https://www.instagram.com/wearepetplace/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/wearepetplace" class="fa fa-twitter"></a>
             </div>
-            <div class="col-6 col-md">
-                <h5><a href="pages/policy.html">Policy</a></h5>
+            <div class="col-lg-2">
+                <h5><a href="../pages/policy.html">Policy</a></h5>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-lg-1 text-center">
                 <p>
                     <a href="#">Back to top</a>
                 </p>
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="../index.js"></script>
 </body>
 
 </html>
