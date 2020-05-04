@@ -3,7 +3,7 @@ var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'password',		//CHANGE YOUR PASSWORD HERE
-    database: 'petplace'
+    database: 'website'
 });
 connection.connect(function (err) {
     if (!err) {
