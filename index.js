@@ -44,8 +44,8 @@ app.get('/appointment_form.html', function (req, res) {
 
 
 app.post('/appointment_form', function (req, res) {
-    conn.query("INSERT INTO appointments (service, firstname, lastname, email, address, city, state, zip, comments) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);",
-        [req.body.service, req.body.firstname, req.body.lastname, req.body.email,
+    conn.query("INSERT INTO appointments (service, datepicker, firstname, lastname, email, address, city, state, zip, comments) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);",
+        [req.body.service, req.body.datepicker, req.body.firstname, req.body.lastname, req.body.email,
         req.body.address, req.body.city, req.body.state, req.body.zip, req.body.comments
         ], function (error, results, fields) {
             if (error) {
